@@ -9982,3 +9982,38 @@ h6,
   padding: 0;
   list-style-type: none;
 }
+
+/* Overlay background */
+.overlay {
+  display: none; /* Hidden by default */
+  position: fixed;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  display: none; /* Enable Flexbox */
+  justify-content: center; /* Center horizontally */
+  align-items: center; /* Center vertically */
+}
+
+/* Overlay content */
+.overlay-content {
+  background-color: #e0e0e0;
+  padding: 20px;
+  width: 60%;
+  height: 60%; /* Full height */
+
+  max-width: 600px;
+  text-align: center;
+  position: relative; /* For positioning close button */
+}
+
+/* Close button */
+.close {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px;
+  cursor: pointer;
+}
