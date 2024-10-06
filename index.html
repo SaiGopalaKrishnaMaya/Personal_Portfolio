@@ -69,7 +69,7 @@
                     <h1 class="typed-text-output d-inline font-weight-lighter text-white"></h1>
                     <div class="typed-text d-none">python Developer, Front End Developer, Django Developer,</div>
                     <div class="d-flex align-items-center justify-content-center justify-content-lg-start pt-5">
-                        <a href="https://www.linkedin.com/in/sai-gopala-krishna-maya-221693280/details/featured/1721116425209/single-media-viewer/?profileId=ACoAAERxtnkBkadwGymvYfRwKFyHESy5cRcuYQ8" class="btn btn-outline-light mr-5" src="">Download CV</a>
+                        <a href="https://drive.usercontent.google.com/uc?id=1P7qtBfKQ5NxR8qXFVwK8iGbUC1qpgBC2&export=download" class="btn btn-outline-light mr-5" src="">Download CV</a>
                         
                     </div>
                 </div>
@@ -379,38 +379,40 @@
 
 
     <!-- Blog Start -->
-    <div class="container-fluid pt-5" id="Projects">
-        <div class="container">
-            <div class="position-relative d-flex align-items-center justify-content-center">
-                <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
-                <h1 class="position-absolute text-uppercase text-primary">Latest Projects</h1>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 mb-5">
+<div class="container-fluid pt-5" id="Projects">
+    <div class="container">
+        <div class="position-relative d-flex align-items-center justify-content-center">
+            <h1 class="display-1 text-uppercase text-white" style="-webkit-text-stroke: 1px #dee2e6;">Projects</h1>
+            <h1 class="position-absolute text-uppercase text-primary">Latest Projects</h1>
+        </div>
+        <!-- Horizontal Scroll Container -->
+        <div class="project-container">
+            <div class="projects-row">
+                <div class="col-lg-4 mb-5 project-item">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/photo-1.jpg" alt="" style="width:300px; height:225px; border-radius:15px;">
+                        <img class="img-fluid rounded w-100" src="img/photo-1.jpg" alt="" style="width:300px; height: 225px; border-radius:15px;">
                         <div class="Projects">
                             <h4 class="font-weight-bold mb-n1">01</h4>
                             <small class="text-white text-uppercase">Jan</small>
                         </div>
                     </div>
-                    <h5 class="font-weight-medium mb-4">WeatherWatch: A Django-Based Weather Application</h5>
+                    <h5 class="font-weight-medium mb-4">WeatherWatch: A Django-Based<br> Weather Application</h5>
                     <a class="btn btn-sm btn-outline-primary py-2" href="https://github.com/MayaSaiGopalaKrishna/weather-app/tree/main/weather%20app">Read More</a>
                 </div>
-                <div class="col-lg-4 mb-5">
+                <div class="col-lg-4 mb-5 project-item">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/photo-2.jpg" alt="" style="width:300px; height:225px; border-radius:15px;">
+                        <img class="img-fluid rounded w-100" src="img/photo-2.jpg" alt="" style="width:300px; height: 225px; border-radius:15px;">
                         <div class="Projects">
                             <h4 class="font-weight-bold mb-n1">02</h4>
                             <small class="text-white text-uppercase">Jan</small>
                         </div>
                     </div>
-                    <h5 class="font-weight-medium mb-4">HomeValue Predictor: ML-Based House Price Estimation</h5>
+                    <h5 class="font-weight-medium mb-4">HomeValue Predictor: ML-Based<br> House Price Estimation</h5>
                     <a class="btn btn-sm btn-outline-primary py-2" href="https://github.com/SaiGopalaKrishnaMaya/House-Prize_Prediction">Read More</a>
                 </div>
-                <div class="col-lg-4 mb-5">
+                <div class="col-lg-4 mb-5 project-item">
                     <div class="position-relative mb-4">
-                        <img class="img-fluid rounded w-100" src="img/photo-3.jpg" alt=""  style="width:300px; height:225px; border-radius:15px;">
+                        <img class="img-fluid rounded w-100" src="img/photo-3.jpg" alt="" style="width:300px; height:225px; border-radius:15px;">
                         <div class="projects">
                             <h4 class="font-weight-bold mb-n1">03</h4>
                             <small class="text-white text-uppercase">Jan</small>
@@ -419,10 +421,42 @@
                     <h5 class="font-weight-medium mb-4">CineMatch: A Machine Learning-Driven Movie Recommendation System</h5>
                     <a class="btn btn-sm btn-outline-primary py-2" href="https://github.com/SaiGopalaKrishnaMaya/Movies_Recommendation">Read More</a>
                 </div>
+                <!-- Add more projects here with the same structure -->
             </div>
         </div>
     </div>
-    <!-- Blog End -->
+</div>
+<!-- Blog End -->
+
+<!-- Add this CSS -->
+<style>
+    .project-container {
+        overflow-x: auto;
+        white-space: nowrap;
+        scroll-behavior: smooth;
+    }
+
+    .projects-row {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    .projects-row .col-lg-4 {
+        flex: 0 0 auto;
+        width: 300px;
+    }
+
+    .project-item {
+        margin-right: 20px; /* Add spacing between projects */
+    }
+
+    .project-container::-webkit-scrollbar {
+        display: none; /* Hide scrollbar for Chrome/Safari */
+    }
+</style>
+
+
 
 
     <!-- Contact Start -->
@@ -472,25 +506,18 @@
     <!-- Contact End -->
 
 
+    
     <!-- Footer Start -->
     <div class="container-fluid bg-primary text-white mt-5 py-5 px-sm-3 px-md-5">
         <div class="container text-center py-5">
             <div class="d-flex justify-content-center mb-4">
-                <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                <!--<a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-twitter"></i></a>
                 <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
                 <a class="btn btn-light btn-social mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
-                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>
+                <a class="btn btn-light btn-social" href="#"><i class="fab fa-instagram"></i></a>-->
             </div>
-            <div class="d-flex justify-content-center mb-3">
-                <a class="text-white" href="#">Privacy</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Terms</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">FAQs</a>
-                <span class="px-3">|</span>
-                <a class="text-white" href="#">Help</a>
-            </div>
-            <p class="m-0">&copy; <a class="text-white font-weight-bold" href="#">Domain Name</a>. All Rights Reserved. Designed by <a class="text-white font-weight-bold" href="https://htmlcodex.com">HTML Codex</a>
+            
+            <p class="m-0">THANK YOU FOR VISTING MY PORTFOLIO
             </p>
         </div>
     </div>

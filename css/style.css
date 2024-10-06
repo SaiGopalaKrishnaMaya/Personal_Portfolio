@@ -10017,3 +10017,47 @@ h6,
   font-size: 24px;
   cursor: pointer;
 }
+
+/* Ensures proper spacing and wrapping for the headings */
+.project-item h5 {
+  display: block;          /* Ensure block-level behavior */
+  margin-top: 20px;        /* Add space between headings */
+  word-wrap: break-word;   /* Ensure long words wrap */
+  font-size: 1.2rem;       /* Adjust font size if needed */
+}
+
+/* Optional: Adjust the column width for better text layout */
+.col-lg-4 {
+  flex: 0 0 100%;          /* Makes columns full-width on smaller screens */
+  max-width: 100%;
+  margin-bottom: 20px;     /* Adds space between project items */
+}
+
+@media (min-width: 992px) { /* For larger screens */
+  .col-lg-4 {
+      flex: 0 0 33.3333%; /* Ensure 3 columns layout on larger screens */
+      max-width: 33.3333%;
+  }
+}
+
+/* Adds spacing and ensures the project numbers and small text do not overlap */
+.Projects {
+  margin-bottom: 10px; /* Adjusts the spacing between the project numbers and the heading */
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.centered-text {
+  text-align: center;
+  font-size: 18px; /* Adjust as per your preference */
+  margin: 10px;
+}
+
